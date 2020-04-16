@@ -3,4 +3,11 @@ import * as ReactDOM from "react-dom";
 import Button from "./button";
 import Icon from "./icon";
 
-ReactDOM.render(<Icon name="wechat" />, document.getElementById("root"));
+const fn: React.MouseEventHandler<SVGElement> = (e) => {
+  console.log(e.target);
+};
+
+ReactDOM.render(
+  <Icon name="wechat" onClick={fn}/>,
+  document.getElementById("root")
+);

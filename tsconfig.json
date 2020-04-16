@@ -14,6 +14,7 @@
     ],
     "target": "es5",
     "module": "ESNext",
+    "moduleResolution": "node",
     "jsx": "react",
     "strict": true,
     "removeComments": true,
@@ -35,8 +36,5 @@
     "declaration": true,
     "esModuleInterop": true
   },
-  "exclude": [
-    "node_modules/**/*.ts",
-    "config/**/*.js"
-  ]
+  "exclude": ["node_modules/**/*.ts", "config/**/*.js", "dist/lib"]
 }
