@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import Button from "./button";
-import Icon from "./icon";
+import Icon from "./icon/icon";
 
 const fn: React.MouseEventHandler<SVGElement> = (e) => {
   console.log(e.target);

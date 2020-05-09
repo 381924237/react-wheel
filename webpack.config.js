@@ -19,6 +19,11 @@ module.exports = {
         loader: "svg-sprite-loader",
       },
       {
+        test: /\.jsx?$/,
+        loader: "babel-loader",
+        exclude: /node_modules/,
+      },
+      {
         test: /\.tsx?$/,
         use: {
           loader: "awesome-typescript-loader",

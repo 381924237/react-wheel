@@ -12,7 +12,7 @@
       "es2018",
       "es2019"
     ],
-    "target": "es5",
+    "target": "es2015",
     "module": "ESNext",
     "moduleResolution": "node",
     "jsx": "react",
@@ -36,5 +36,6 @@
     "declaration": true,
     "esModuleInterop": true
   },
+  "include": ["lib/**/*"],
   "exclude": ["node_modules/**/*.ts", "config/**/*.js", "dist/lib"]
 }
