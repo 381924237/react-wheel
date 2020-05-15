@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import Button from "./button";
+import Button from "./button/button";
 import Icon from "./icon/icon";
 
 const fn: React.MouseEventHandler<SVGElement> = (e) => {
@@ -8,6 +8,6 @@ const fn: React.MouseEventHandler<SVGElement> = (e) => {
 };
 
 ReactDOM.render(
-  <Icon name="wechat" onClick={fn}/>,
+  <Icon name="wechat" onClick={fn} />,
   document.getElementById("root")
 );
