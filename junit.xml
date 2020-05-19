@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="8" failures="0" time="5.398">
-  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2020-05-18T02:40:15" time="2.441" tests="1">
-    <testcase classname="button is div" name="button is div" time="0.019">
+<testsuites name="jest tests" tests="8" failures="0" time="7.22">
+  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2020-05-18T03:22:45" time="3.773" tests="1">
+    <testcase classname="button is div" name="button is div" time="0.018">
     </testcase>
   </testsuite>
-  <testsuite name="classnames" errors="0" failures="0" skipped="0" timestamp="2020-05-18T02:40:15" time="2.926" tests="5">
-    <testcase classname="classnames receive one className" name="classnames receive one className" time="0.003">
+  <testsuite name="classnames" errors="0" failures="0" skipped="0" timestamp="2020-05-18T03:22:45" time="4.4" tests="5">
+    <testcase classname="classnames receive one className" name="classnames receive one className" time="0.006">
     </testcase>
     <testcase classname="classnames receive two classNames" name="classnames receive two classNames" time="0.001">
     </testcase>
@@ -13,13 +13,13 @@
     </testcase>
     <testcase classname="classnames receive undefined" name="classnames receive undefined" time="0">
     </testcase>
-    <testcase classname="classnames receive other type arguments" name="classnames receive other type arguments" time="0">
+    <testcase classname="classnames receive other type arguments" name="classnames receive other type arguments" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2020-05-18T02:40:15" time="2.979" tests="2">
-    <testcase classname="icon render successfully" name="icon render successfully" time="0.012">
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2020-05-18T03:22:45" time="4.442" tests="2">
+    <testcase classname="icon render successfully" name="icon render successfully" time="0.021">
     </testcase>
-    <testcase classname="icon click" name="icon click" time="0.036">
+    <testcase classname="icon click" name="icon click" time="0.05">
     </testcase>
   </testsuite>
 </testsuites>
