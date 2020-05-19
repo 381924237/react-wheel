@@ -3,7 +3,6 @@ orbs:
   node: circleci/node@1.1.6
 jobs:
   prepare:
-    <<: *defaults
     steps:
       - checkout
       - restore_cache:
@@ -19,7 +18,6 @@ jobs:
           paths:
             - node_modules
   build:
-    <<: *defaults
     steps:
       - checkout
       - attach_workspace:
@@ -33,7 +31,6 @@ jobs:
             - LICENSE
             - README.md
   test:
-    <<: *defaults
     steps:
       - checkout
       - attach_workspace:
