@@ -2,49 +2,17 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
 jobs:
-  prepare:
+  build-and-test:
+    executor:
+      name: node/default
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v2-dependencies-{{ checksum "package.json" }}
-      - run: npm install
-      - save_cache:
-          paths:
-            - node_modules
-          key: v2-dependencies-{{ checksum "package.json" }}
-      - persist_to_workspace:
-          root: .
-          paths:
-            - node_modules
-  build:
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run: npm run build
-      - persist_to_workspace:
-          root: .
-          paths:
-            - dist
-            - package.json
-            - LICENSE
-            - README.md
-  test:
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run: npm run ci
-      - store_test_results:
-          path: test-results
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run: npm run build
+            - run: npm run ci
 workflows:
   build-and-test:
     jobs:
-      - prepare
-      - build:
-          requires:
-            - test
-      - test:
-          requires:
-            - prepare
+      - build-and-test
