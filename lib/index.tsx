@@ -5,6 +5,7 @@ import Icon from "./icon/icon";
 
 const fn: React.MouseEventHandler<SVGElement> = (e) => {
   console.log(e.target);
+  console.log(1);
 };
 
 ReactDOM.render(
