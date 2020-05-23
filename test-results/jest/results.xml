@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="8" failures="0" time="17.598">
+  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2020-05-23T09:44:00" time="5.995" tests="1">
+    <testcase classname="button is div" name="button is div" time="0.04">
+    </testcase>
+  </testsuite>
+  <testsuite name="classnames" errors="0" failures="0" skipped="0" timestamp="2020-05-23T09:44:00" time="9.094" tests="5">
+    <testcase classname="classnames receive one className" name="classnames receive one className" time="0.009">
+    </testcase>
+    <testcase classname="classnames receive two classNames" name="classnames receive two classNames" time="0.001">
+    </testcase>
+    <testcase classname="classnames receive zero className" name="classnames receive zero className" time="0.001">
+    </testcase>
+    <testcase classname="classnames receive undefined" name="classnames receive undefined" time="0.001">
+    </testcase>
+    <testcase classname="classnames receive other type arguments" name="classnames receive other type arguments" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2020-05-23T09:44:00" time="9.295" tests="2">
+    <testcase classname="icon render successfully" name="icon render successfully" time="0.065">
+    </testcase>
+    <testcase classname="icon click" name="icon click" time="0.13">
+    </testcase>
+  </testsuite>
+</testsuites>
