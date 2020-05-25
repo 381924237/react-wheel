@@ -1,0 +1,44 @@
+aside {
+  flex: 0 0 275px;
+  border-right: 1px solid #f0f0f0;
+  .main-title {
+    padding: 8px 16px 8px 30px;
+    margin: 16px 0;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.45);
+  }
+  .menu-item {
+    padding: 8px 16px 8px 30px;
+    margin: 4px 0 8px;
+    height: 40px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: relative;
+    &:hover {
+      color: #1890ff;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-right: 3px solid #1890ff;
+      transform: scaleY(0.0001);
+      opacity: 0;
+      transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1),
+        opacity 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    &.active {
+      color: rgb(24, 144, 255);
+      background-color: rgb(230, 247, 255);
+      &:after {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+  }
+}

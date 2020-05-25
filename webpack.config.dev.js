@@ -5,11 +5,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = Object.assign({}, commonConfig, {
   mode: "development",
-  entry: { example: "./example.tsx" },
+  devServer: {
+    historyApiFallback: true,
+  },
+  entry: { example: "./docs/docs.tsx" },
   plugins: [
     new HtmlWebpackPlugin({
       title: "YUI",
-      template: "./example.html",
+      template: "./docs/docs.html",
     }),
   ],
 });

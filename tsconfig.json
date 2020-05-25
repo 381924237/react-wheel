@@ -3,6 +3,9 @@
   "compilerOptions": {
     "outDir": "dist/lib",
     "baseUrl": ".",
+    "paths": {
+      "@/*": ["lib/*"]
+    },
     "lib": [
       "es2015",
       "es2016",
