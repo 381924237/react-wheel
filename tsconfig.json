@@ -39,6 +39,6 @@
     "declaration": true,
     "esModuleInterop": true
   },
-  "include": ["lib/**/*"],
+  "include": ["lib/**/*", "docs/**/*"],
   "exclude": ["node_modules/**/*.ts", "config/**/*.js", "dist/lib"]
 }
