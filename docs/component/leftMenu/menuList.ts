@@ -15,6 +15,10 @@ export default [
         name: "icon",
         title: "Icon"
       },
+      {
+        name: "dialog",
+        title: "Dialog"
+      },
     ]
   }
 ]
