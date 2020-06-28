@@ -1,9 +1,10 @@
+@import "../index.scss";
 .yui-dialog {
   background: #fff;
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
   min-width: 20em;
   border-radius: 4px;
@@ -15,5 +16,33 @@
     top: 0;
     background: rgba(1, 1, 1, 0.5);
   }
-
+  &-header {
+    font-size: 22px;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(128,128,128,.5);
+    min-height: 1.5em;
+  }
+  &-main {
+    padding: 8px 16px;
+    min-height: 6em;
+  }
+  &-footer {
+    padding: 8px 16px;
+    border-top: 1px solid rgba(128,128,128,.5);
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
 }
