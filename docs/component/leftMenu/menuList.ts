@@ -19,6 +19,10 @@ export default [
         name: "dialog",
         title: "Dialog"
       },
+      {
+        name: "layout",
+        title: "Layout"
+      }
     ]
   }
 ]

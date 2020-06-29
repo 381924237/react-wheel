@@ -1,0 +1,24 @@
+.b,
+.c,
+.d,.e {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.b,
+.d {
+  height: 64px;
+  background-color: rgb(125, 188, 234);
+}
+
+.c {
+  height: 128px;
+  background-color: rgb(16, 142, 233);
+}
+
+.e {
+  width: 200px;
+  background-color: rgb(59, 160, 233);
+}
