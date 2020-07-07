@@ -7,7 +7,7 @@ import "./leftMenu.scss";
 export default () => {
   const history = useHistory();
   return (
-    <aside>
+    <aside className="docs-left-menu">
       <ul>
         {MenuList.map((main) => {
           return (

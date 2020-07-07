@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./common.scss";
 import { RenderComponent } from "./helper/renderComp";
 import MenuList from "./component/leftMenu/menuList";
-import Header from "./component/header/header";
 import LeftMenu from "./component/leftMenu/leftMenu";
 
 const Loading = () => {
@@ -12,7 +11,10 @@ const Loading = () => {
 };
 ReactDOM.render(
   <Router>
-    <Header />
+    <header className="docs-header">
+      <span className="logo">logo</span>
+      <span className="github">github</span>
+    </header>
     <div className="main-wrapper">
       <LeftMenu />
       <React.Suspense fallback={<Loading />}>
