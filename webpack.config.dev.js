@@ -8,11 +8,11 @@ module.exports = Object.assign({}, commonConfig, {
   devServer: {
     historyApiFallback: true,
   },
-  entry: { example: "./docs/docs.tsx" },
+  entry: { example: "./example/docs.tsx" },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Wheel",
-      template: "./docs/docs.html",
+      template: "./example/docs.html",
     }),
   ],
 });
