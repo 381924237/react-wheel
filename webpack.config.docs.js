@@ -6,15 +6,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = Object.assign({}, commonConfig, {
   mode: "production",
-  entry: { docs: "./docs/docs.tsx" },
+  entry: { docs: "./example/docs.tsx" },
   output: {
-    path: path.resolve(__dirname, "./page"),
+    path: path.resolve(__dirname, "./docs"),
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Wheel",
-      template: "./docs/docs.html",
-      filename: "docs.html",
+      template: "./example/docs.html",
+      filename: "index.html",
     }),
   ],
 });
